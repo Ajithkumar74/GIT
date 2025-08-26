@@ -9,6 +9,11 @@ When working with digital files, whether is a .docx word file or a programming .
 python file, you probaly don't finish all your work at once.
 
 inthis case, the software you use to manage and track changes in these files is your version control.
+
+* **Git** → Distributed Version Control System (DVCS).
+* **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
+* **GitLab** → Similar to GitHub but also includes DevOps tools (Merge Requests, CI/CD pipelines).
+
 🚀 Push Local File into GitHub Repository
 1. Initialize Git in your local folder
 cd C:\Users\ajith\OneDrive - MSFT\Documents\GitHub\GitHub Notes
@@ -29,6 +34,66 @@ git remote add origin https://github.com/Ajithkumar74/GIT.git
 5. Push to GitHub
 git branch -M main             # Rename default branch to main (if needed)
 git push -u origin main        # Push code to GitHub
+
+
+# 🔄 Git Undo Commands (Cheat Sheet)
+
+### 1. **Undo changes in working directory (before staging)**
+
+👉 Discard modifications in a file (go back to last commit):
+
+git checkout -- <file>
+
+
+👉 Discard ALL uncommitted changes:
+
+
+git checkout -- .
+
+### 2. **Undo changes after staging (`git add`) but before commit**
+
+👉 Unstage file (keep changes in working directory):
+
+git reset <file>
+
+👉 Unstage everything:
+
+git reset
+
+### 3. **Undo committed changes (but keep history safe)**
+
+👉 Create a new commit that undoes the previous commit:
+
+git revert <commit-id>
+
+
+### 4. **Undo commit (dangerous: rewrites history)**
+
+👉 Reset HEAD to a specific commit, discard everything after it:
+
+git reset --hard <commit-id>
+
+👉 Reset HEAD to previous commit (delete last commit completely):
+
+git reset --hard HEAD~1
+
+### 5. **Remove untracked files**
+
+👉 Delete all untracked files (⚠ irreversible):
+
+git clean -f
+
+👉 Delete untracked files + directories:
+
+git clean -fd
+
+
+✅ So, rule of thumb:
+
+* **Working directory** → `git checkout -- file`
+* **Staged** → `git reset file`
+* **Committed** → `git revert` (safe) OR `git reset --hard` (dangerous)
+
 
 ## 1. 🔹 Basics
 
