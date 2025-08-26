@@ -23,7 +23,7 @@ git init
 git add "git github git lab.txt" //git github git lab.txt=>file_name
 git add .
 3.commit your changes
-git commit -m "git github git lab.txt"
+git commit -m "git github git lab.txt" -> commit name double quotes ""
 
 4.Connect with GitHub repository
 Go to GitHub → New Repository → Copy the repo URL (HTTPS or SSH).
