@@ -1,0 +1,202 @@
+
+---
+
+# 📘 Git, GitHub & GitLab – Complete Notes
+
+---
+Version Control:
+When working with digital files, whether is a .docx word file or a programming .py
+python file, you probaly don't finish all your work at once.
+
+inthis case, the software you use to manage and track changes in these files is your version control.
+
+
+## 1. 🔹 Basics
+
+* **Git** → Distributed Version Control System (DVCS).
+* **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
+* **GitLab** → Similar to GitHub but also includes DevOps tools (Merge Requests, CI/CD pipelines).
+
+---
+
+## 2. 🔹 Git Configuration Commands
+
+```bash
+git config --global user.name "Your Name"           # Set username
+git config --global user.email "you@example.com"   # Set email
+git config --list                                  # View all config
+```
+
+---
+
+## 3. 🔹 Repository Commands
+
+```bash
+git init                     # Initialize new repo
+git clone <repo-url>         # Clone repo from GitHub/GitLab
+git status                   # Show changes
+git log                      # Commit history
+git diff                     # Show unstaged changes
+```
+
+---
+
+## 4. 🔹 Staging & Committing
+
+```bash
+git add <file>               # Stage specific file
+git add .                    # Stage all files
+git commit -m "message"      # Commit staged files
+git commit -am "message"     # Add + commit tracked files
+```
+
+---
+
+## 5. 🔹 Branching
+
+```bash
+git branch                   # List branches
+git branch <branch-name>     # Create new branch
+git checkout <branch-name>   # Switch branch
+git checkout -b <branch>     # Create + switch branch
+git merge <branch>           # Merge branch into current
+git branch -d <branch>       # Delete branch (safe)
+git branch -D <branch>       # Force delete branch
+```
+
+---
+
+## 6. 🔹 Remote Repositories
+
+```bash
+git remote -v                              # Show remote repos
+git remote add origin <repo-url>           # Add remote
+git remote remove origin                   # Remove remote
+git push origin main                       # Push changes to main
+git pull origin main                       # Pull changes from main
+git fetch origin                           # Fetch changes (no merge)
+```
+
+---
+
+## 7. 🔹 Syncing Work
+
+```bash
+git pull --rebase origin main              # Rebase local with remote
+git merge origin/main                      # Merge remote changes
+```
+
+👉 **Rebase** = clean history,
+👉 **Merge** = keeps merge commit.
+
+---
+
+## 8. 🔹 Undo & Reset
+
+```bash
+git checkout -- <file>       # Discard local changes
+git reset <file>             # Unstage file
+git reset --hard HEAD        # Discard all changes
+git revert <commit-id>       # Undo commit (safe, keeps history)
+git reset --hard <commit-id> # Reset to commit (dangerous)
+```
+
+---
+
+## 9. 🔹 Stash (Save Work Temporarily)
+
+```bash
+git stash                    # Stash changes
+git stash list               # List stashes
+git stash pop                # Reapply last stash
+git stash drop               # Delete stash
+```
+
+---
+
+## 10. 🔹 Tags
+
+```bash
+git tag v1.0                 # Create tag
+git tag                      # List tags
+git push origin v1.0         # Push tag
+git push --tags              # Push all tags
+```
+
+---
+
+## 11. 🔹 GitHub Flow (Pull Request)
+
+1. Fork repo → Clone → Create branch
+2. Make changes → Commit → Push branch
+3. Open **Pull Request (PR)** on GitHub
+4. Reviewer approves → Merge PR → Delete branch
+
+Commands:
+
+```bash
+git push origin feature-branch
+```
+
+Then create PR from GitHub UI.
+
+---
+
+## 12. 🔹 GitLab Flow (Merge Request)
+
+Similar to GitHub but called **Merge Request (MR)**.
+Also integrates with **CI/CD Pipelines**.
+
+---
+
+## 13. 🔹 Git Collaboration Commands
+
+```bash
+git fetch origin                 # Get all remote updates
+git pull origin develop          # Sync develop branch
+git rebase origin/develop        # Rebase onto develop
+git push origin feature-branch   # Push feature branch
+```
+
+---
+
+## 14. 🔹 Common Workflows
+
+### a) Feature Branch Workflow
+
+```bash
+git checkout -b feature-login
+... work ...
+git commit -am "Login feature"
+git push origin feature-login
+```
+
+Then create PR/MR.
+
+### b) Hotfix Workflow
+
+```bash
+git checkout main
+git pull origin main
+git checkout -b hotfix-bug
+... fix ...
+git commit -m "Bug fixed"
+git push origin hotfix-bug
+```
+
+---
+
+## 15. 🔹 Useful Shortcuts
+
+```bash
+git log --oneline --graph --all    # Visual commit history
+git shortlog -sn                   # Show contributors
+git reflog                         # Show history of HEAD
+git cherry-pick <commit-id>        # Apply specific commit
+```
+
+---
+
+✅ With this, you have a **complete Git, GitHub & GitLab commands cheat sheet**.
+
+Do you want me to also create a **visual workflow diagram (like GitHub flow + GitLab flow)** for easier memory?
