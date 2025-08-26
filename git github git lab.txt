@@ -9,7 +9,26 @@ When working with digital files, whether is a .docx word file or a programming .
 python file, you probaly don't finish all your work at once.
 
 inthis case, the software you use to manage and track changes in these files is your version control.
-123456
+🚀 Push Local File into GitHub Repository
+1. Initialize Git in your local folder
+cd C:\Users\ajith\OneDrive - MSFT\Documents\GitHub\GitHub Notes
+git init
+
+2.Add Your file(s)
+git add "git github git lab.txt" //git github git lab.txt=>file_name
+git add .
+3.commit your changes
+git commit -m "git github git lab.txt"
+
+4.Connect with GitHub repository
+Go to GitHub → New Repository → Copy the repo URL (HTTPS or SSH).
+Example (HTTPS):
+git remote add origin https://github.com/Ajithkumar74/GIT.git
+
+(Replace username and repo-name with yours)
+5. Push to GitHub
+git branch -M main             # Rename default branch to main (if needed)
+git push -u origin main        # Push code to GitHub
 
 ## 1. 🔹 Basics
 
