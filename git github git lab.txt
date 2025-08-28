@@ -10,6 +10,23 @@ python file, you probaly don't finish all your work at once.
 
 inthis case, the software you use to manage and track changes in these files is your version control.
 
+* Version control system(VCS) allows us to track changes, undo changes,compare versions, work with others, and more! 
+* git itself is on examples of a vcs, and while there are others(subversion, mercurial,etc..), git is by far the most popular VSC in the world.
+
+* unfortunately for us git is free and open-source and we can download it to our own computer.
+
+What is Github>(or GitLab?)
+* You can use git completely free locally, and use it to track changes on your local files on your own computer.
+
+* However if you want to host your code on the internet, its typically easier to use a hosting service like GitHub.
+
+* GitHub(owned by microsoft) integrates easily with git and allows you to have versions of your code "live" on the internet for you and others to access, update, and changes from any machine.
+
+* GitHub is not the same thing as "git".
+Git: Open source VCS software.
+GitHub:
+Company that operates a service for hosting files on the internet that are managed using git.
+
 * **Git** → Distributed Version Control System (DVCS).
 * **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
 * **GitLab** → Similar to GitHub but also includes DevOps tools (Merge Requests, CI/CD pipelines).
