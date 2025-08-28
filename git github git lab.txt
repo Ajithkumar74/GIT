@@ -27,11 +27,28 @@ Git: Open source VCS software.
 GitHub:
 Company that operates a service for hosting files on the internet that are managed using git.
 * A VCS such as git allows you to add "save points" to your work, create changes, update existing code,undo changes, create branches for others to work on, and merge work together.
+
 Repository:
 The main place we track chnages and manage our files tht are using Git is called a repository.
 How can we create a Git Repository?
 * Upon creating a repository  with git init  you will create a hidden .git file.
 * The .git  file is a hidden file that manges the versioning of the files inside the Git repository.
+* We can also use the Graphical Interface with GitHub Desktop or we can even create a new repository online at WWW.github.com
+* Then we can git clone this repository to our local machine.
+Private Repositories:
+public repositories with the git clone command and then the HTTPS URL for the public repostory
+How to deal with Private Repositories we wish to clone
+
+Option 1: Command Line:
+* Create Personal Access tokens (PAT) on Git Hub.com
+When using the git clone command, reference the PAT.
+Option 2:GitHub Desktop Tool GUI:
+* Open the Github Desktop tool
+* Login with GitHub Username and PW 
+* Clone Repo via GUI
+
+Git inside a FOlder/Directory:
+* Upon creating a Git Repository, all the folders/directories inside the top level Git Repository will also be part of that Repository, meaning all changes are tracked.
 
 * **Git** → Distributed Version Control System (DVCS).
 * **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
@@ -52,6 +69,9 @@ This command will report back the status of your Git repository.
 git add "git github git lab.txt" //git github git lab.txt=>file_name
 git add .
 3.commit your changes
+We can think of these as "commits", where we've informed Git about specific changes to files.
+A Git Commit doesn't just pertain to a saving chnages in a single file.It can constitute specific changes across an entire working directory.
+
 git commit -m "git github git lab.txt" -> commit name double quotes ""
 
 4.Connect with GitHub repository
