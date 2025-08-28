@@ -71,6 +71,17 @@ Git pull:
 * using git pull makes sense when you want to directly grab changes from the remote branch and directly merge them into your current branch.
 * This means you will literally update the file sin your working  directory to match up and merge  with the remote branch.
 
+after commits:
+Branches:
+* A Branch represents an independent line of development.
+* Branches serve as an abstraction for the edit/stage/commit process.
+* They are a way to request a brand new working directory, staging area, an project history.
+* Branches are just pointers to commits.
+* When you create a branch, all Git needs to do is create a new pointer,it doesn't change the repository in any other way.
+HEAD:
+A HEAD is simply a reference to a commit object.
+We can thick of HEAD as pointing to a specific commit in a branch that we are currently viewing.
+
 🚀 Push Local File into GitHub Repository
 1. Initialize Git in your local folder
 cd C:\Users\ajith\OneDrive - MSFT\Documents\GitHub\GitHub Notes
@@ -90,13 +101,6 @@ git commit -m "git github git lab.txt" -> commit name double quotes ""
 * git commit process:
 * As we create commits, we are linking to a parent commit, showing the log of the commit history.
 * As we need incorporate the workflows of others or be able to focus on new updates without breaking old code, we need branches.
-
-Branches:
-* A Branch represents an independent line of development.
-* Branches serve as an abstraction for the edit/stage/commit process.
-* They are a way to request a brand new working directory, staging area, an project history.
-* Branches are just pointers to commits.
-* When you create a branch, all Git needs to do is create a new pointer,it doesn't change the repository in any other way.
 
 4.Connect with GitHub repository
 Go to GitHub → New Repository → Copy the repo URL (HTTPS or SSH).
