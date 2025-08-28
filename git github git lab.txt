@@ -27,6 +27,8 @@ Git: Open source VCS software.
 GitHub:
 Company that operates a service for hosting files on the internet that are managed using git.
 * A VCS such as git allows you to add "save points" to your work, create changes, update existing code,undo changes, create branches for others to work on, and merge work together.
+Repository:
+The main place we track chnages and manage our files tht are using Git is called a repository.
 
 * **Git** → Distributed Version Control System (DVCS).
 * **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
