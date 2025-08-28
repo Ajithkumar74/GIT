@@ -87,6 +87,14 @@ We can think of these as "commits", where we've informed Git about specific chan
 A Git Commit doesn't just pertain to a saving chnages in a single file.It can constitute specific changes across an entire working directory.
 
 git commit -m "git github git lab.txt" -> commit name double quotes ""
+* git commit process:
+* As we create commits, we are linking to a parent commit, showing the log of the commit history.
+* As we need incorporate the workflows of others or be able to focus on new updates without breaking old code, we need branches.
+
+Branches:
+* A Branch represents an independent line of development.
+* Branches serve as an abstraction for the edit/stage/commit process.
+* They are a way to request a brand new working directory, staging area, an project history.
 
 4.Connect with GitHub repository
 Go to GitHub → New Repository → Copy the repo URL (HTTPS or SSH).
