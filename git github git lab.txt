@@ -40,7 +40,10 @@ git clone -b Folder_name https://gitlab.git
 🚀 Push Local File into GitHub Repository
 1. Initialize Git in your local folder
 cd C:\Users\ajith\OneDrive - MSFT\Documents\GitHub\GitHub Notes
-git init
+git init -this command initilizies a Git Repository on your local machine. You only need to run this command once per project.
+
+git status:
+This command will report back the status of your Git repository.
 
 2.Add Your file(s)
 git add "git github git lab.txt" //git github git lab.txt=>file_name
