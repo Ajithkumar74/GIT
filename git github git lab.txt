@@ -95,6 +95,8 @@ Branches:
 * A Branch represents an independent line of development.
 * Branches serve as an abstraction for the edit/stage/commit process.
 * They are a way to request a brand new working directory, staging area, an project history.
+* Branches are just pointers to commits.
+* When you create a branch, all Git needs to do is create a new pointer,it doesn't change the repository in any other way.
 
 4.Connect with GitHub repository
 Go to GitHub → New Repository → Copy the repo URL (HTTPS or SSH).
