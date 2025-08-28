@@ -29,6 +29,9 @@ Company that operates a service for hosting files on the internet that are manag
 * A VCS such as git allows you to add "save points" to your work, create changes, update existing code,undo changes, create branches for others to work on, and merge work together.
 Repository:
 The main place we track chnages and manage our files tht are using Git is called a repository.
+How can we create a Git Repository?
+* Upon creating a repository  with git init  you will create a hidden .git file.
+* The .git  file is a hidden file that manges the versioning of the files inside the Git repository.
 
 * **Git** → Distributed Version Control System (DVCS).
 * **GitHub** → Cloud-based hosting for Git repositories, mainly used for collaboration (Pull Requests).
